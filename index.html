@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duka Langu | Fresh Breakfast Essentials</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <div class="brand">
+          <span class="brand-mark">DL</span>
+          <div>
+            <p class="brand-name">Duka Langu</p>
+            <p class="brand-tagline">Breakfast essentials, delivered 24/7</p>
+          </div>
+        </div>
+        <div class="nav-actions">
+          <a class="contact-pill" href="tel:0711595171">Call: 0711595171</a>
+          <a class="contact-pill" href="https://wa.me/254711595171" target="_blank" rel="noreferrer">
+            WhatsApp
+          </a>
+          <button class="cart-button" id="cartButton" aria-label="Open cart">
+            Cart
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+        </div>
+      </nav>
+      <section class="hero">
+        <div class="hero-text">
+          <p class="pill">Nairobi delivery only</p>
+          <h1>Start every morning with fresh breakfast essentials.</h1>
+          <p>
+            Duka Langu is a professional, canteen-style breakfast supplier serving homes, schools,
+            and offices across Nairobi. We deliver door-to-door 24/7 so your pantry is always ready.
+          </p>
+          <div class="hero-actions">
+            <button class="primary" id="shopNow">Shop breakfast items</button>
+            <button class="ghost" id="viewPolicies">View policies</button>
+          </div>
+          <div class="hero-highlights">
+            <div>
+              <h3>Reliable Nairobi delivery</h3>
+              <p>Transportation cost is paid by the customer and shown on every item.</p>
+            </div>
+            <div>
+              <h3>Order confirmation</h3>
+              <p>Secure checkout with instant order confirmation for peace of mind.</p>
+            </div>
+            <div>
+              <h3>WhatsApp-ready support</h3>
+              <p>Reach us on 0711595171 for quick assistance.</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h2>Quick order summary</h2>
+          <ul class="summary-list">
+            <li>
+              <span>Availability</span>
+              <strong>24/7</strong>
+            </li>
+            <li>
+              <span>Delivery radius</span>
+              <strong>Nairobi (expandable)</strong>
+            </li>
+            <li>
+              <span>Average delivery</span>
+              <strong>45-90 mins</strong>
+            </li>
+          </ul>
+          <div class="notice">
+            <strong>Reminder:</strong> Transportation cost is paid by the customer and shown in cart
+            totals.
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="filters" id="filters">
+        <div class="filters-header">
+          <h2>Browse breakfast essentials</h2>
+          <p>Search by product name and choose your delivery location.</p>
+        </div>
+        <div class="filters-controls">
+          <label class="field">
+            <span>Search products</span>
+            <input type="search" id="searchInput" placeholder="E.g. milk, bread, coffee" />
+          </label>
+          <label class="field">
+            <span>Delivery location</span>
+            <select id="locationSelect">
+              <option value="">All locations</option>
+              <option value="Nairobi">Nairobi</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Category</span>
+            <select id="categorySelect">
+              <option value="">All categories</option>
+            </select>
+          </label>
+        </div>
+      </section>
+
+      <section class="products" id="products"></section>
+
+      <section class="info-grid" id="policies">
+        <article>
+          <h2>Terms &amp; Conditions</h2>
+          <p>
+            By placing an order, you agree that all product prices and transportation costs are
+            stated in Kenyan Shillings (KES). Orders are confirmed once payment instructions are
+            shared at checkout and delivery is limited to Nairobi for now.
+          </p>
+          <ul>
+            <li>Minimum order value: KES 300 for delivery.</li>
+            <li>Delivery fees are charged per order and paid by the customer.</li>
+            <li>Orders may be adjusted if stock levels change; we will confirm via phone/WhatsApp.</li>
+          </ul>
+        </article>
+        <article>
+          <h2>Privacy Policy</h2>
+          <p>
+            We collect only the details required to fulfill your order, such as your name, phone
+            number, and delivery address. We never sell personal information and retain it only to
+            improve your experience.
+          </p>
+          <ul>
+            <li>Payment confirmation is coordinated directly via mobile phone.</li>
+            <li>You can request data removal by contacting 0711595171.</li>
+            <li>WhatsApp chats are stored securely on our business account.</li>
+          </ul>
+        </article>
+        <article>
+          <h2>Customer Support</h2>
+          <p>
+            We are available 24/7 for Nairobi customers. Reach us on call or WhatsApp for urgent
+            deliveries, bulk orders, or supply agreements for institutions.
+          </p>
+          <div class="support-card">
+            <span>Call or WhatsApp</span>
+            <strong>0711595171</strong>
+            <a href="https://wa.me/254711595171" target="_blank" rel="noreferrer">Chat now</a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <h3>Duka Langu</h3>
+        <p>Professional breakfast essentials delivered door-to-door across Nairobi.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Mobile: 0711595171 (WhatsApp available)</p>
+        <p>Email: orders@dukalangu.co.ke</p>
+      </div>
+      <div>
+        <h4>Service hours</h4>
+        <p>Open 24/7 for orders and support.</p>
+        <p>Delivery: Nairobi only (expanding soon).</p>
+      </div>
+    </footer>
+
+    <div class="drawer" id="cartDrawer" aria-hidden="true">
+      <div class="drawer-content">
+        <div class="drawer-header">
+          <h2>Your cart</h2>
+          <button class="icon-button" id="closeCart">✕</button>
+        </div>
+        <div id="cartItems"></div>
+        <div class="cart-summary" id="cartSummary"></div>
+        <button class="primary full" id="checkoutButton">Proceed to checkout</button>
+      </div>
+    </div>
+
+    <div class="modal" id="productModal" aria-hidden="true">
+      <div class="modal-content">
+        <button class="icon-button" id="closeModal">✕</button>
+        <div class="modal-body" id="modalBody"></div>
+      </div>
+    </div>
+
+    <div class="modal" id="checkoutModal" aria-hidden="true">
+      <div class="modal-content">
+        <button class="icon-button" id="closeCheckout">✕</button>
+        <div class="modal-body">
+          <h2>Checkout</h2>
+          <form id="checkoutForm">
+            <div class="form-grid">
+              <label class="field">
+                <span>Full name</span>
+                <input type="text" name="name" required />
+              </label>
+              <label class="field">
+                <span>Phone number</span>
+                <input type="tel" name="phone" required />
+              </label>
+              <label class="field">
+                <span>Delivery location</span>
+                <select name="location" required>
+                  <option value="">Select location</option>
+                  <option value="Nairobi">Nairobi</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>Delivery address</span>
+                <input type="text" name="address" required />
+              </label>
+            </div>
+            <label class="field">
+              <span>Delivery notes (optional)</span>
+              <textarea name="notes" rows="3"></textarea>
+            </label>
+            <div class="checkout-summary" id="checkoutSummary"></div>
+            <button class="primary full" type="submit">Place order</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="confirmationModal" aria-hidden="true">
+      <div class="modal-content">
+        <div class="modal-body" id="confirmationBody"></div>
+        <button class="primary full" id="closeConfirmation">Continue shopping</button>
+      </div>
+    </div>
+
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
